@@ -1,0 +1,1 @@
+protoc.exe --csharp_out="../Client/Assets/Scripts/" --cpp_out="../Server/proto/" player.proto

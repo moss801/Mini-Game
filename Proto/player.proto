@@ -1,0 +1,433 @@
+syntax = "proto3";
+
+package TCCamp;
+
+enum CLIENT_CMD {
+    CLIENT_CMD_INVALID = 0;
+    CLIENT_CMD_BEGIN = 30000;
+
+    CLIENT_PING = 30001;
+
+    CLIENT_ADD_REQ = 30003;
+
+	CLIENT_LOGIN_REQ = 30004;
+	CLIENT_LOGOUT_REQ = 30005;
+	CLIENT_CREATE_REQ = 30006;
+	CLIENT_ANNOUNCE_REQ = 30007;
+
+	CLIENT_CHARACTERADD_REQ = 30014;
+	CLIENT_UPDATESTATUE_REQ = 30015;
+	CLIENT_CHARACTERREMOVE_REQ = 30016;
+
+	CLIENT_SCENEBRIEF_REQ = 30024;
+	CLIENT_MONSTERATTRIBUTE_REQ = 30025;
+	CLIENT_SCENEDETAIL_REQ = 30026;
+	CLIENT_SCENESYN_REQ = 30027;
+	CLIENT_ATTACK_REQ = 30028;
+	CLIENT_BULLETSYN_REQ = 30029;
+	CLIENT_RANKLIST_REQ = 30030;
+	CLIENT_START_REQ = 30031;
+	CLIENT_END_REQ = 30032;
+	CLIENT_RPC_REQ = 30033;
+	CLIENT_ROOM_REQ = 30034;
+	CLIENT_ENTERROOM_REQ = 30035;
+	CLIENT_CREATEROOM_REQ = 30036;
+	CLIENT_EXITROOM_REQ = 30037;
+	CLIENT_COLLISIONCHECK_REQ = 30038;
+	CLIENT_MONSTERSYN_REQ = 30039;
+	CLIENT_GAMETIME_REQ = 30040;
+	CLIENT_GAMESCORE_REQ = 30041;
+	CLIENT_GAMECONTINUE_REQ = 30042;
+
+	CLIENT_BUYITEM_REQ = 30050;
+	CLIENT_DELETEITEM_REQ = 30051;
+	CLIENT_GETSHOPITEMS_REQ = 30052;
+	CLIENT_GETBAGITEMS_REQ = 30053;
+	CLIENT_GETMONEY_REQ = 30054;
+	CLIENT_ADDMONEY_REQ = 30055;
+	CLIENT_ITEMCONFIG_REQ = 30056;
+
+    CLIENT_CMD_END = 33000;
+}
+
+enum SERVER_CMD {
+    SERVER_CMD_INVALID = 0;
+    SERVER_CMD_BEGIN = 1000;
+
+    SERVER_PONG = 1001;
+    SERVER_ADD_RSP = 1003;
+
+	SERVER_LOGIN_RSP = 1004;
+	SERVER_CREATE_RSP = 1005;
+	SERVER_ANNOUNCE_RSP = 1006;
+
+	SERVER_CHARACTERADD_RSP = 1014;
+	SERVER_BROADCAST_CHARACTERSTATUE = 1015;
+	SERVER_CHARACTERREMOVE_RSP = 1016;
+	SERVER_CHARACTERANIMSYN_RSP = 1017;
+
+	SERVER_SCENEBRIEF_RSP = 1024;
+	SERVER_MONSTERATTRIBUTE_RSP = 1025;
+	SERVER_ATTACK_RSP = 1027;
+	SERVER_RANKLIST_RSP = 1028;
+	SERVER_START_RSP = 1029;
+	SERVER_END_RSP = 1030;
+	SERVER_RPC_MSG = 1031;
+	SERVER_ROOM_RSP = 1032;
+	SERVER_ENTERROOM_RSP = 1033;
+	SERVER_ROOMREADY_RSP = 1034;
+	SERVER_ROOMNUMCHANGE_RSP = 1035;
+	SERVER_SCENEMONSTER_RSP = 1036;
+	SERVER_SCENEOBJECT_RSP = 1037;
+	SERVER_MONSTERSYN_RSP = 1038;
+	SERVER_BULLETSYN_RSP = 1039;
+	SERVER_GAMETIME_RSP = 1040;
+	SERVER_GAMESCORE_RSP = 1041;
+	SERVER_GAMECONTINUE_RSP = 1042;
+
+	SERVER_BUYITEM_RSP = 1050;
+	SERVER_DELETEITEM_RSP = 1051;
+	SERVER_GETSHOPITEMS_RSP = 1052;
+	SERVER_GETBAGITEMS_RSP = 1053;
+	SERVER_GETMONEY_RSP = 1054;
+	SERVER_ADDMONEY_RSP = 1055;
+	SERVER_ITEMCONFIG_RSP = 1056;
+
+	GM_OPERATE_RSP = 1100;
+
+    SERVER_CMD_END = 10000;
+}
+
+enum RPC_CMD{
+	RPC_BEGIN = 0;
+	TRAP_STATUE_ENABLE = 1;
+	TRAP_STATUE_DISABLE = 2;
+	BOX_STATUE_OPEN = 3;
+	LIGHT_STATUE_ON = 4;
+	LIGHT_STATUE_OFF = 5;
+	DOOR_STATUE_OPEN = 6;
+	DOOR_STATUE_CLOSE = 7;
+	TIME_UPDATE = 8;
+	THROW_WEAPON = 9;
+	RPC_END = 20;
+}
+
+enum SceneObjectType{
+	OBJECT_NONE = 0;
+	PLAYER = 1;
+	BULLET = 2;
+	GHOST = 3;
+	GARGOYLE = 4;
+	DOOR = 5;
+	LIGHT = 6;
+	BOX = 7;
+	SLIME = 8;
+	TRAP = 9;
+	FINISHLINE = 10;
+} 
+
+enum CharacterAnimType{
+	ANIM_NONE = 0;
+	OPENDOOR = 1;
+	CLOSEDOOR = 2;
+	TURNONLIGHT = 3;
+	TURNOFFLIGHT = 4;
+	OPENBOX = 5;
+	ATTACK = 6;
+	HURT = 7;
+}
+
+enum StatueCode{
+	STATUE_CODE_INVALID = 0;
+    STATUE_CODE_BEGIN = 50000;
+
+	STATUE_SUCCESS = 50001;
+	STATUE_MONEY_NOTENOUGH = 50002;
+	STATUE_BUY_ITEMNOTENOUGH = 50003;
+	STATUE_DELETE_ITEMNOTENOUGH = 50004;
+	STATUE_ITEM_ITEMNOTEXIST = 50005;
+	STATUE_NOTEXIST = 50006;
+
+
+	STATUE_CODE_END = 51000;
+}
+
+message CollisionReq{
+	SceneObjectType typeA = 1;
+	int32 idA = 2;
+	SceneObjectType typeB = 3;
+	int32 idB = 4;
+}
+
+message RPC{
+	RPC_CMD cmd = 1;
+	repeated int32 param = 2; 
+}
+
+message PlayerLoginReq {
+	string PlayerID = 1;
+	string Password = 2;
+}
+
+message PlayerLoginRsp {
+	int32 Result = 1;
+	string Reason = 2;
+	PlayerSyncData PlayerData = 3;
+}
+
+message PlayerSaveData {
+	string PlayerID = 1;
+	string Password = 2;
+	bytes Name = 3;
+}
+
+message PlayerSyncData {
+	string Name = 1;
+	string Playerid = 2;
+}
+
+message RoomInfoMsg{
+	string roomName = 1;
+	int32 roomId = 2;
+	int32 maxNum = 3;
+}
+
+message RoomInfoReq{
+	int32 sceneId = 1;
+}
+
+message RoomInfoRsp{
+	repeated RoomInfoMsg RoomInfoList = 1;
+}
+
+message RoomNumChange{
+	int32 currentNum = 1;
+}
+
+message EnterRoomReq{
+	int32 roomId = 1;
+}
+
+message EnterRoomRsp{
+	int32 resCode = 1;
+	string resStr = 2;
+	RoomInfoMsg roomInfo = 3;
+}
+
+message CreateRoomReq{
+	string roomName = 1;
+	int32 sceneId = 2;
+	int32 maxNum = 3;
+}
+
+message PlayerCreateReq {
+	string PlayerID = 1;
+	string Password = 2;
+	bytes Name = 3;
+}
+
+message PlayerCreateRsp {
+	int32 Result = 1;
+	string PlayerID = 2;
+	string Name = 3;
+	string Reason = 4;
+}
+
+message SyncAnnounce {
+	bytes Announce = 1;
+}
+
+message SceneBriefRsp{
+	repeated SceneBriefMsg SceneBrief = 1;
+}
+
+message SceneBriefMsg{
+	string SceneName = 1;
+	int32 SceneId = 2;
+	int32 GargoyleCount = 3;
+	int32 GhostCount = 4;
+	int32 Difficult = 5;
+}
+
+message SceneObjectMsg{
+	int32 Id = 1;
+	SceneObjectType Type = 2;
+	Vec3Msg Position = 3;
+	Vec3Msg Rotation = 4;
+}
+
+message SceneMonsterRsp{
+	repeated SceneObjectMsg MonsterList = 1;
+	int32 NetId = 2;
+}
+
+message SceneObjectRsp{
+	repeated SceneObjectMsg ObjectList = 1;
+}
+
+message Vec3Msg{
+	float x = 1;
+	float y = 2;
+	float z = 3;
+}
+
+message MonsterAttributeMsg{
+	SceneObjectType Type = 1;
+	string name = 2;
+	int32 Attack = 3;
+	int32 Hp = 4;
+	float Speed = 5;
+	int32 Value = 6;
+	float RebornTime = 7;
+	float DetectRange = 8;
+}
+
+message MonsterAttributeRsp{
+	repeated MonsterAttributeMsg AttributeList = 1;
+}
+
+message MonsterSynMsg{
+	int32 Id = 1;
+	int32 Hp = 2;
+	Vec3Msg Position = 3;
+	Vec3Msg Rotation = 4;
+	Vec3Msg TargetPos = 5;
+}
+
+
+message MonstersSynMsg{
+	repeated MonsterSynMsg MonsterList = 1;
+	int32 Netid = 2;
+}
+
+message BulletSynMsg{
+	int32 Id = 1;
+	Vec3Msg Position = 2;
+	Vec3Msg Rotation = 3;
+	bool IsActive = 4;
+}
+
+message BulletsSynMsg{
+	repeated BulletSynMsg BulletList = 1;
+}
+
+message AttackReq{
+	int32 Id = 1;
+	Vec3Msg Position = 2;
+	Vec3Msg Rotation = 3;
+}
+
+message RankListMsg{
+	string Name = 1;
+	int32 Score = 2;
+	int32 Time = 3;
+}
+
+message RankListReq{
+	int32 sceneId = 1;
+}
+
+message GameTimeRsp{
+	int32 time = 1;
+}
+
+message RankListRsp{
+	repeated RankListMsg RankList = 1;
+}
+
+message RankListData{
+	repeated RankListRsp RankData = 1;
+}
+
+message CharacterStatueMsg{
+	int32 NetId = 1;
+	int32 Hp = 2;
+	float Speed = 3;
+	float MaxSpeed = 4;
+	Vec3Msg Position = 5;
+	Vec3Msg Rotation = 6;
+	bool IsDeath = 7;
+	bool IsArmed = 8;
+	bool IsImmunity = 9;
+	int32 actionType = 10;
+	int32 score = 11;
+}
+
+message CharacterStatueReq{
+	int32 NetId = 1;
+	float Speed = 2;
+	Vec3Msg Position = 3;
+	Vec3Msg Rotation = 4;
+}
+
+message CharacterAnimSynMsg{
+	CharacterAnimType AnimtType = 1;
+	int32 NetId = 2;
+}
+
+message NetAsyncMsg{
+	repeated CharacterStatueMsg CharacterStatueList = 1;
+}
+
+message RemoveCharacterRsp{
+	int32 NetId = 1;
+}
+
+message ScoreRsp{
+	int32 Score = 1;
+}
+
+message GameResultRsp{
+	int32 Score = 1;
+	int32 RoomRank = 2;
+	int32 GameTime = 3;
+	bool Success = 4;
+	bool IsFinished = 5;
+	int32 BeatCount = 6;
+}
+
+message GameContinueRsp{
+	bool needContinue = 1;
+}
+
+
+message ItemConfig{
+	int32 Id = 1;
+	string Name = 2;
+	string Introduce = 3;
+	int32 Price = 4;
+	string IconName = 5;
+}
+message ItemConfigs{
+	repeated ItemConfig Item = 1;
+}
+message ItemInfo{
+	int32 Id = 1;
+	int32 Num = 2;
+}
+message ShopItemRsp{
+	repeated ItemInfo Item = 1;
+}
+message BagItemRsp{
+	int32 Money = 1;
+	repeated ItemInfo Item = 2;
+}
+message BuyReq{
+	int32 Id = 1;
+	int32 Num = 2;
+}
+message DeleteItemReq{
+	int32 Id = 1;
+	int32 Num = 2;
+}
+message AddMoneyReq{
+	int32 Num = 1;
+}
+message MoneyRsp{
+	StatueCode Code = 1;
+	int32 Num = 2;
+}
+message StatueCodeRsp{
+	StatueCode Code = 1;
+	string Reason = 2;
+}
