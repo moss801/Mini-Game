@@ -1,0 +1,44 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/Platform/WindowsPaths.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/CMakeLists.txt
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/extract_includes.bat.in
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/install.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/libprotobuf-lite.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/libprotobuf.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/libprotoc.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/protobuf-config-version.cmake.in
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/protobuf-config.cmake.in
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/protobuf-lite.pc.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/protobuf-module.cmake.in
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/protobuf-options.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/protobuf.pc.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/protoc.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/version.rc.in
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject/CMakeFiles/3.16.0/CMakeCCompiler.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject/CMakeFiles/3.16.0/CMakeCXXCompiler.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject/CMakeFiles/3.16.0/CMakeRCCompiler.cmake
+E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject/CMakeFiles/3.16.0/CMakeSystem.cmake

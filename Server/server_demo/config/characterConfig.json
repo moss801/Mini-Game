@@ -1,0 +1,20 @@
+{
+    "character":{
+        "originpositions" : [{
+            "position" :[-27.163,0,-2.124006],
+            "rotation" :[0,90,0]
+        },{
+            "position" :[-27.163,0,0.485],
+            "rotation" :[0,90,0]
+        },{
+            "position" :[-25.14,0,-2.124006],
+            "rotation" :[0,90,0]
+        },{
+            "position" :[-25.14,0,0.48],
+            "rotation" :[0,90,0]
+        }],
+        "speed" : 1,
+        "hp" : 3,
+        "actiontype" : 0
+    }
+}

@@ -1,0 +1,285 @@
+{
+    "scenes":[{
+        "id" : 1,
+        "brief":{
+            "name" : "牛刀小试",
+            "gargoyle" : 2,
+            "ghost" : 1,
+            "difficult" : 1
+        },
+        "gargoyle":[{
+            "enemyid" : 0,
+            "position" : [-15.241,0,-2.695],
+            "rotation" : [0,0,0]
+        },{
+            "enemyid" : 1,
+            "position" : [3.845,0,-4.615],
+            "rotation" : [0,180,0]
+        }],
+        "ghost":[{
+            "enemyid" : 3,
+            "position" : [-2.741,0,1.844],
+            "rotation" : [0,0,0]
+        }],
+        "slime":[{
+            "objectid" : 0,
+            "position" : [-2.05,-0.01,3.46],
+            "rotation" : [0,0,0]
+        }],
+        "trap":[{
+            "objectid" : 0,
+            "position" : [0.82,0.01,-0.44],
+            "rotation" : [0,0,0]
+        }],
+        "door":[{
+            "objectid" : 0,
+            "position" : [20.507,0.043,2.538],
+            "rotation" : [0,-90,0]
+        },{
+            "objectid" : 1,
+            "position" : [-11.42,0.076,3.489],
+            "rotation" : [0,180,0]
+        }],
+        "light":[{
+            "objectid" : 0,
+            "position" : [-2.669,1.462,-3.641],
+            "rotation" : [0,270,0]
+        },{
+            "objectid" : 1,
+            "position" : [5.265,1.462,2.339],
+            "rotation" : [0,270,0]
+        }],
+        "box":[{
+            "objectid" : 0,
+            "position" : [-8.64,0,4.502],
+            "rotation" : [0,0,0]
+        },{
+            "objectid" : 1,
+            "position" : [3.558,0,-1.207],
+            "rotation" : [0,0,0]
+        }],
+        "hangoutpoint":[{
+            "pointid": 0,
+            "position" :[-5.49,0,1.42]
+        },{
+            "pointid": 1,
+            "position" :[-3.77,0,9.56]
+        },{
+            "pointid": 2,
+            "position" :[-9.77,0,-5.35]
+        },{
+            "pointid": 3,
+            "position" :[-5.3,0,5.3]
+        },{
+            "pointid": 4,
+            "position" :[-0.16,0,-6.07]
+        }],
+        "endposition":[{
+            "position" :[21.79,0,1.73]
+        }]
+    },{
+        "id" : 2,
+        "brief":{
+            "name" : "初露锋芒",
+            "gargoyle" : 2,
+            "ghost" : 2,
+            "difficult" : 2
+        },
+        "gargoyle":[{
+            "enemyid" : 0,
+            "position" : [-15.241,0,-2.695],
+            "rotation" : [0,0,0]
+        },{
+            "enemyid" : 1,
+            "position" : [3.845,0,-4.615],
+            "rotation" : [0,180,0]
+        }],
+        "ghost":[{
+            "enemyid" : 3,
+            "position" : [-2.741,0,1.844],
+            "rotation" : [0,0,0]
+        },{
+            "enemyid" : 4,
+            "position" : [7.43,0,1.74],
+            "rotation" : [0,0,0]
+        }],
+        "slime":[{
+            "objectid" : 0,
+            "position" : [-2.05,0.03,3.46],
+            "rotation" : [0,0,0]
+        },{
+            "objectid" : 1,
+            "position" : [-11.34,0.03,0.31],
+            "rotation" : [0,0,0]
+        }],
+        "trap":[{
+            "objectid" : 0,
+            "position" : [0.82,0.01,-0.44],
+            "rotation" : [0,0,0]
+        }],
+        "door":[{
+            "objectid" : 0,
+            "position" : [20.507,0.043,2.538],
+            "rotation" : [0,-90,0]
+        },{
+            "objectid" : 1,
+            "position" : [-11.42,0.076,3.489],
+            "rotation" : [0,180,0]
+        },{
+            "objectid" : 2,
+            "position" : [2.118,0.01279998,-2.459],
+            "rotation" : [0,90,0]
+        }],
+        "light":[{
+            "objectid" : 0,
+            "position" : [-2.669,1.462,-3.641],
+            "rotation" : [0,270,0]
+        },{
+            "objectid" : 1,
+            "position" : [5.265,1.462,2.339],
+            "rotation" : [0,270,0]
+        }],
+        "box":[{
+            "objectid" : 0,
+            "position" : [-8.64,0,4.502],
+            "rotation" : [0,0,0]
+        },{
+            "objectid" : 1,
+            "position" : [3.558,0,-1.207],
+            "rotation" : [0,0,0]
+        },{
+            "objectid" : 2,
+            "position" : [-15.074,0,-1.772],
+            "rotation" : [0,0,0]
+        }],
+        "hangoutpoint":[{
+            "pointid": 0,
+            "position" :[-5.49,0,1.42]
+        },{
+            "pointid": 1,
+            "position" :[-3.77,0,9.56]
+        },{
+            "pointid": 2,
+            "position" :[-9.77,0,-5.35]
+        },{
+            "pointid": 3,
+            "position" :[-5.3,0,5.3]
+        },{
+            "pointid": 4,
+            "position" :[-0.16,0,-6.07]
+        }],
+        "endposition":[{
+            "position" :[21.79,0,1.73]
+        }]
+    },{
+        "id" : 3,
+        "brief":{
+            "name" : "无人生还",
+            "gargoyle" : 2,
+            "ghost" : 5,
+            "difficult" : 10
+        },
+        "gargoyle":[{
+            "enemyid" : 0,
+            "position" : [-15.241,0,-2.695],
+            "rotation" : [0,0,0]
+        },{
+            "enemyid" : 1,
+            "position" : [3.845,0,-4.615],
+            "rotation" : [0,180,0]
+        }],
+        "ghost":[{
+            "enemyid" : 3,
+            "position" : [-2.741,0,1.844],
+            "rotation" : [0,0,0]
+        },{
+            "enemyid" : 4,
+            "position" : [7.43,0,1.74],
+            "rotation" : [0,0,0]
+        },{
+            "enemyid" : 5,
+            "position" : [-3.77,0,9.56],
+            "rotation" : [0,0,0]
+        },{
+            "enemyid" : 6,
+            "position" : [3.233,0,-1.434],
+            "rotation" : [0,0,0]
+        },{
+            "enemyid" : 7,
+            "position" : [22.11,0,0.86],
+            "rotation" : [0,0,0]
+        }],
+        "slime":[{
+            "objectid" : 0,
+            "position" : [-2.05,0.03,3.46],
+            "rotation" : [0,0,0]
+        },{
+            "objectid" : 1,
+            "position" : [-11.34,0.03,0.31],
+            "rotation" : [0,0,0]
+        }],
+        "trap":[{
+            "objectid" : 0,
+            "position" : [0.82,0.01,-0.44],
+            "rotation" : [0,0,0]
+        },{
+            "objectid" : 1,
+            "position" : [-10.397,-0.002,4.653],
+            "rotation" : [0,0,0]
+        }],
+        "door":[{
+            "objectid" : 0,
+            "position" : [20.507,0.043,2.538],
+            "rotation" : [0,-90,0]
+        },{
+            "objectid" : 1,
+            "position" : [-11.42,0.076,3.489],
+            "rotation" : [0,180,0]
+        },{
+            "objectid" : 2,
+            "position" : [2.118,0.01279998,-2.459],
+            "rotation" : [0,90,0]
+        }],
+        "light":[{
+            "objectid" : 0,
+            "position" : [-2.669,1.462,-3.641],
+            "rotation" : [0,270,0]
+        },{
+            "objectid" : 1,
+            "position" : [5.265,1.462,2.339],
+            "rotation" : [0,270,0]
+        }],
+        "box":[{
+            "objectid" : 0,
+            "position" : [-8.64,0,4.502],
+            "rotation" : [0,0,0]
+        },{
+            "objectid" : 1,
+            "position" : [3.558,0,-1.207],
+            "rotation" : [0,0,0]
+        },{
+            "objectid" : 2,
+            "position" : [-15.074,0,-1.772],
+            "rotation" : [0,0,0]
+        }],
+        "hangoutpoint":[{
+            "pointid": 0,
+            "position" :[-5.49,0,1.42]
+        },{
+            "pointid": 1,
+            "position" :[-3.77,0,9.56]
+        },{
+            "pointid": 2,
+            "position" :[-9.77,0,-5.35]
+        },{
+            "pointid": 3,
+            "position" :[-5.3,0,5.3]
+        },{
+            "pointid": 4,
+            "position" :[-0.16,0,-6.07]
+        }],
+        "endposition":[{
+            "position" :[21.79,0,1.73]
+        }]
+    }]
+}

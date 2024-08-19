@@ -1,0 +1,13 @@
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/NightlyMemoryCheck.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/Experimental.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/uv_run_tests_a.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/Nightly.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/uv_run_tests.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/uv_a.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/uv.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/Continuous.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/uv_run_benchmarks_a.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/RUN_TESTS.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/INSTALL.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/ALL_BUILD.dir
+E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/CMakeFiles/ZERO_CHECK.dir

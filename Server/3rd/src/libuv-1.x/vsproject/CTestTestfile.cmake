@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x
+# Build directory: E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(uv_test "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/Debug/uv_run_tests.exe")
+  set_tests_properties(uv_test PROPERTIES  WORKING_DIRECTORY "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x" _BACKTRACE_TRIPLES "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;598;add_test;E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(uv_test "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/Release/uv_run_tests.exe")
+  set_tests_properties(uv_test PROPERTIES  WORKING_DIRECTORY "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x" _BACKTRACE_TRIPLES "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;598;add_test;E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(uv_test "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/MinSizeRel/uv_run_tests.exe")
+  set_tests_properties(uv_test PROPERTIES  WORKING_DIRECTORY "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x" _BACKTRACE_TRIPLES "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;598;add_test;E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(uv_test "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/RelWithDebInfo/uv_run_tests.exe")
+  set_tests_properties(uv_test PROPERTIES  WORKING_DIRECTORY "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x" _BACKTRACE_TRIPLES "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;598;add_test;E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;0;")
+else()
+  add_test(uv_test NOT_AVAILABLE)
+endif()
+if("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(uv_test_a "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/Debug/uv_run_tests_a.exe")
+  set_tests_properties(uv_test_a PROPERTIES  WORKING_DIRECTORY "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x" _BACKTRACE_TRIPLES "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;613;add_test;E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(uv_test_a "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/Release/uv_run_tests_a.exe")
+  set_tests_properties(uv_test_a PROPERTIES  WORKING_DIRECTORY "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x" _BACKTRACE_TRIPLES "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;613;add_test;E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(uv_test_a "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/MinSizeRel/uv_run_tests_a.exe")
+  set_tests_properties(uv_test_a PROPERTIES  WORKING_DIRECTORY "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x" _BACKTRACE_TRIPLES "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;613;add_test;E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(uv_test_a "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/vsproject/RelWithDebInfo/uv_run_tests_a.exe")
+  set_tests_properties(uv_test_a PROPERTIES  WORKING_DIRECTORY "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x" _BACKTRACE_TRIPLES "E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;613;add_test;E:/training/TCCampDemo/Server/3rd/src/libuv-1.x/CMakeLists.txt;0;")
+else()
+  add_test(uv_test_a NOT_AVAILABLE)
+endif()

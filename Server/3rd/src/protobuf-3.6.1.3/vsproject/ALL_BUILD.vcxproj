@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78CE3730-14F0-34AC-8FA1-BC8F3F748C28}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake -BE:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject --check-stamp-file E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\extract_includes.bat.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\install.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotobuf-lite.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotobuf.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotoc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-config-version.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-config.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-lite.pc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-module.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-options.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf.pc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protoc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\version.rc.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeCCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeCXXCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeRCCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake -BE:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject --check-stamp-file E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\extract_includes.bat.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\install.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotobuf-lite.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotobuf.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotoc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-config-version.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-config.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-lite.pc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-module.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-options.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf.pc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protoc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\version.rc.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeCCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeCXXCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeRCCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake -BE:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject --check-stamp-file E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\extract_includes.bat.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\install.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotobuf-lite.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotobuf.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotoc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-config-version.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-config.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-lite.pc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-module.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-options.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf.pc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protoc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\version.rc.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeCCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeCXXCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeRCCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/cmake -BE:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject --check-stamp-file E:/training/TCCampDemo/Server/3rd/src/protobuf-3.6.1.3/vsproject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\extract_includes.bat.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\install.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotobuf-lite.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotobuf.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\libprotoc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-config-version.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-config.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-lite.pc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-module.cmake.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf-options.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protobuf.pc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\protoc.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\cmake\version.rc.in;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeCCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeCXXCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeRCCompiler.cmake;E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\3.16.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\ZERO_CHECK.vcxproj">
+      <Project>{021B4194-106C-349A-8FD9-905BC9321E7C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\libprotobuf.vcxproj">
+      <Project>{6DF6FBE7-5A63-3157-8803-D776A17C1DE9}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\libprotobuf-lite.vcxproj">
+      <Project>{D56103E4-B596-3BBD-8F1F-D232A5BC9AD4}</Project>
+      <Name>libprotobuf-lite</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\libprotoc.vcxproj">
+      <Project>{B683F6EE-AADC-3C6A-B208-2C9A9943B6E1}</Project>
+      <Name>libprotoc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\training\TCCampDemo\Server\3rd\src\protobuf-3.6.1.3\vsproject\protoc.vcxproj">
+      <Project>{24ED60BA-E795-3B2A-BFC6-ED54E49B7FC1}</Project>
+      <Name>protoc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

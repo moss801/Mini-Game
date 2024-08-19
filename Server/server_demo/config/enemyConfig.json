@@ -1,0 +1,21 @@
+{
+    "enemys":[{
+        "name" : "ghost",
+        "typeid" : 3,
+        "damage" : 1,
+        "health" : 9,
+        "speed" : 0.7,
+        "rebirthtime" : 7,
+        "killpoint" : 100,
+        "detectRange" : 0
+    },{
+        "name" : "gargoyle",
+        "typeid" : 4,
+        "damage" : 5,
+        "health" : -1,
+        "speed" : 0,
+        "rebirthtime" : 0,
+        "killpoint" : 0,
+        "detectRange" : 30
+    }]
+}
